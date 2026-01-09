@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form>
+        <h1>Register</h1>
+        <label for="firstname">First name</label>
+        <br>
+        <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+        <br><br>
+        <label for="lastname">Last name</label>
+        <br>
+        <input type="text" id="lastname" name="lastname" placeholder="last name">
+        <br><br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="email" required>
+        <br><br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" name="password" placeholder="password" required>
+        <br><br>
+        <label>Select your gender: </label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">female</label>
+        <br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+    </form>
+    <form>
+        <h2>More input types</h2>
+        <label for="time">time</label>
+        <input type="time" id="time">
+        <br><br>
+        <label for="datetime">datetime</label>
+        <input type="datetime" id="datatime">
+        <br><br>
+        <label for="week">week</label>
+        <input type="week" id="week">
+        <br><br>
+        <label for="range">range</label>
+        <input type="range" id="range">
+        <br><br>
+    </form>    
+</body>
+</html>
+<!-- radio-გამოიყენება როდესაც მოხმარებელს უწევს რამდენიმე არჩევანიდან ერთ-ერთის ან რამდენიმეს არჩევა -->
+<!-- name-ანიჭებს input-ს სახელს რომლის მიხედვითაც გადაწყდება შეყვანილი მონაცემი სად შეინახება -->
+<!-- placeholder-გამოაქვს შესაყვან ველში ნაცისფერი ტექსტი რომლის მთავარი მიზანია აუხსნას მომხმარებელს
+ თუ რა ინფორმაცია უნდა შეიყვანოს იქ -->
+<!-- required-ხდის input-ს აუცილებლად შესავსებს ანუ მისი შევსების გარეშე მომხმარებელი ვერ დარეგისტრირდება საიტზე -->
+<!-- value-არის მნიშვნელობა.მაგალითად radio თეგის გამოყენებისას რომელიმეს თუ მივანიჭებთ value-ეს ვთქვათ
+ 5-ს თუ მომხმარებელი მას აირჩევს მონაცემთა ბაზაში ჩაიწერება 5 -->
