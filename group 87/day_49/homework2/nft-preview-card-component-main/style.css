@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+#main{
+    width: 350px;
+    height: 550px;
+    border-radius: 15px;
+    background-color:hsl(216, 50%, 16%) ;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+#img {
+    height: 270px;
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.line{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border:1px solid hsl(215, 32%, 27%);
+}
+#Jules{
+    color: white;
+    margin-top: 12px;
+    transition: 0.25s;
+}
+#Jules:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+h1{
+    font-size: 23px; 
+    color: white;
+    transition: 0.25s;
+}
+h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+
