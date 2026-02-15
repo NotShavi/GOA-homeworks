@@ -1,0 +1,59 @@
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    height: 500px;
+    width: 900px;
+    font-family: "Federant", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+div{
+    
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+}
+#SouthKorea{
+    background-image: url(korea.avif);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+#Tbilisi{
+    background-image: url(Tbilisi.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+#Dubai{
+    background-image: url(Dubai.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+#NewYork{
+    background-image: url(NewYork.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+#Tokyo{
+    background-image: url(Tokyo.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+#Paris{
+    background-image: url(Paris.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+

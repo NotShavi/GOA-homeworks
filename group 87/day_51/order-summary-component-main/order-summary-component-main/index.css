@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+}
+
+#main{
+    height: 700px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#pic{
+    width: 400px;
+    height: 250px;
+    background-image: url(images/illustration-hero.svg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0px 0px;
+}
+#text{
+    width: 400px;
+    height: 425px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+}
+#plan{
+    width: 318px;
+    height: 85px;
+    background-color: hsla(225, 100%, 94%, 0.504);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+button{
+    background-color: hsl(245, 75%, 52%);
+    width: 318px;
+    height: 45px;
+    margin-top: 30px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.25s;
+}
+button:hover{
+    opacity: 0.80;
+}
+#cancel{
+    transition: 0.25s;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+#cancel:hover{
+    color: black;
+    font-weight: 900;
+}
+#change{
+    color: hsl(245, 75%, 52%); 
+    font-weight: 900;
+    font-size: 14px;
+    transition: 0.25s;
+}
+#change:hover{
+    opacity: 0.70;
+}

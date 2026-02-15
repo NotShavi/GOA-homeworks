@@ -1,0 +1,14 @@
+#main{
+    width: 600px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+div{
+    border: 1px solid red;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}

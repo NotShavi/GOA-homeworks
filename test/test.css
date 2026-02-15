@@ -1,0 +1,40 @@
+ #parent{
+
+    width: 900px;
+    height: 150px;
+    display: grid;
+    grid-template-columns:  3fr 1fr 1fr;
+    /* gap: 10px; */
+
+}
+
+
+/* fr - fractional unit */
+
+#parent div{
+    background-color: white;
+    color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    border:5px rgb(53, 144, 250) solid;
+    width: 100%;
+    
+}
+
+#first{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    
+}
+
+#second{
+    grid-column:1 / 2;
+    grid-row:1 / 2 ;
+
+}
+#fourth{
+    grid-column:1 / 2;
+    grid-row:2 / 3 ;
+}

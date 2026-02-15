@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+ 
+</head>
+<body>
+
+  <!-- Order Summary
+
+  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!
+
+  Annual Plan
+  $59.99/year
+
+  Change
+
+  Proceed to Payment
+  Cancel Order -->
+  <div id="main">
+      <div id="pic"></div>
+      <div id="text">
+        <h1 style="margin-top: 0px; margin-bottom: 5px;font-weight: 900; font-size: 29px;">Order Summary</h1>
+        <p style="font-size: 16px; color: hsl(224, 23%, 55%);padding-left: 5px;padding-right: 5px;">You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!</p>
+        <div id="plan">
+          <img src="images/icon-music.svg" alt="" width="55px" height="55px">
+          <div style="display: flex;flex-direction: row;justify-content: space-between; width: 230px;">
+            <div style="display: flex; flex-direction: column; justify-content: center; margin-left: 10px;">
+              <h4 style="margin-bottom: 7px;">Annual Plan</h4>
+              <p style="color:hsl(224, 23%, 55%); margin-top: 0px;">$59.99/year</p>
+            </div>
+            <div style="display: flex;flex-direction: column;justify-content: center;">
+              <p id="change"><u>Change</u></p>
+            </div>
+          </div>
+        </div>
+        <button>Proceed to Payment</button>
+        <p id="cancel">Cancel Order</p>
+      </div>
+  </div>
+ 
+</body>
+</html>

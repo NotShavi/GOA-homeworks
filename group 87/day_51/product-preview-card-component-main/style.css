@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    font-family: "Fraunces";
+}
+#main{
+    width: 550px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+}
+#image{
+    border-radius: 15px 0px 0px 15px;
+    height: 100%;
+    width: 275px;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+#text{
+    background-color: white;
+    height: 100%;
+    width: 275px;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-sizing: border-box;
+}
+#price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 175px;
+}
+button{
+    height: 55px;
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    border: 0;
+    transition: 0.25s;
+}
+button:hover{
+    background-color: hsl(158, 42%, 18%);
+}
