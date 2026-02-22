@@ -1,0 +1,52 @@
+
+#main {
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid red;
+}
+#first{
+    width: 200px;
+    height: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(download.webp);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: 1px solid red;
+}
+#sale{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 100px;
+    text-align: center;
+}
+#second{
+    width: 200px;
+    height: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(shopping.webp);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: 1px solid red;
+}
+#sale1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: 100px;
+    text-align: center;
+}

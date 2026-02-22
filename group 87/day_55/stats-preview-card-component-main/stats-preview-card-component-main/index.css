@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    font-family: "Inter", sans-serif;
+}
+
+#main{
+    width: 1200px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#pic{
+    background-image: url(images/image-header-desktop.jpg);
+    background-size: cover;           
+    background-position: center;       
+    background-repeat: no-repeat;
+}
+#text{
+    background-color: hsl(244, 37%, 16%);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#stats{
+    display: flex;
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+}
+#companies{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+#templates{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+#queries{
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+}
