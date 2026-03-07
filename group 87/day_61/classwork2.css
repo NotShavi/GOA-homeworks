@@ -1,0 +1,35 @@
+#cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#d{
+    height: 100px;
+    width: 100px;
+    background-color: lightsalmon;
+    border-radius: 50px;
+}
+#d:active{
+    animation: Animation 3s infinite alternate;
+}
+@keyframes Animation {
+    0%{
+        height: 100px;
+        width: 100px;
+    }
+    25%{
+        transform: scale(0.6) translate(250px,-200px);
+    }
+    50%{
+        transform: scale(1.5) translate(350px,20px);
+    }
+    75%{
+        transform: scale(1.2) translate(500px,150px);
+    }
+    100%{
+        transform: scale(2) translate(450px,-70px);
+    }
+    
+
+}

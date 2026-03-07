@@ -1,0 +1,36 @@
+#cont{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#d{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 100px;
+
+}
+#d:active{
+    animation: Animation 3s infinite alternate;
+}
+
+@keyframes Animation {
+    0%{
+        width: 200px;
+        height: 200px;
+    }
+    25%{
+        transform: scale(1.5) translate(100px,-100px);
+    }
+    50%{
+        transform: scale(2) translate(150px,-150px);
+    }
+    75%{
+        transform: scale(1.5) translate(300px,-40px);
+    }
+    100%{
+        transform: scale(1) translate(600px,50px);
+    }
+
+}
