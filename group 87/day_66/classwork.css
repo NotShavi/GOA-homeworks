@@ -22,6 +22,7 @@
     background-image: url(e7fadff529227217669dcfa2efebe2f5cc828075.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 #txt1{
     position: absolute;
@@ -359,5 +360,177 @@ i:hover{
     }
     #foottxt3{
         left: 600px;
+    }
+}
+@media (max-width:376px){
+    #blackbox{
+        width: 0;
+        height: 0;
+    }
+    #image{
+        height: 240px;
+        width: 375px;
+    }
+    #txt1{
+        color: #151515;
+        height: 110px;
+        width: 343px;
+        font-size: 60px;
+        line-height: 55px;
+        left: 16px;
+        top: 272px;
+    }
+    #txt2{
+        height: 112px;
+        width: 343px;
+        font-size: 18px;
+        line-height: 28px;
+        top: 414px;
+        left: 16px;
+    }
+    #bt{
+        width: 260px;
+        height: 72px;
+        left: 16px;
+        top: 558px;
+    }
+    #insidebttext{
+        height: 72px;
+        width: 204px;
+    }
+    #insidebt{
+        width: 56px;
+        height: 72px;
+    }
+    #second{
+        width: 343px;
+        height: 1605px;
+        left: 16px;
+        top: 750px;
+        display: flex;
+        flex-direction: column;
+    }
+    #txtimg{
+        display: flex;
+        flex-direction: column;
+    }
+    #image2{
+        height: 320px;
+        width: 343px;
+        top: 750px;
+        left: 16px;
+    }
+    #txt3{
+        position: absolute;
+        top: 360px;
+        left: 16px;
+        width: 223px;
+        height: 343px;
+    }
+    #singleimg{
+        width: 326px;
+        height: 480px;
+        position: absolute;
+        top: 660px;
+        left: 16px;
+    }
+    #day{
+        width: 343px;
+        height: 90px;
+        font-size: 50px;
+        line-height: 45px;
+    }
+    #daytxt{
+        width: 343px;
+        height: 112px;
+        font-size: 18px;
+        line-height: 28px;
+        top: 140px;
+    }
+    #imgs{
+        display: flex;
+        flex-direction: column;
+    }
+    #txtimg{
+        display: flex;
+        flex-direction: column;
+    }
+    #imgs{
+        display: flex;
+        flex-direction: column;
+    }
+    #topofdouble{
+        width: 327px;
+        height: 200px;
+        position: absolute;
+        top: 1150px;
+        left: 16px;
+    }
+    #lowofdouble{
+        width: 327px;
+        height: 293px;
+        position: absolute;
+        top: 1365px;
+        left: 16px;
+        justify-content: center;
+    }
+    #insidedouble{
+        height: 198px;
+        width: 295px;
+    }
+    #come{
+        width: 295px;
+        height: 90px;
+        font-size: 50px;
+        line-height: 45px;
+    }
+    #txtcome{
+        height: 84px;
+        width: 295px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #footer{
+        height: 336px;
+        width: 375px;
+        top: 2500px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #foottxt{
+        height: 240px;
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+    }
+    #foottxt1{
+        height: 40px;
+        width: 110.05px;
+    }
+    .footh{
+        font-size: 18px;
+    }
+    #foottxt2{
+        height: 104px;
+        width: 311px;
+        font-size: 16px;
+        line-height: 26px;
+        top: 78px;
+        left: 0;
+    }
+    #modern{
+        width: 311px;
+        height: 104px;
+        color: white;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        font-family: "Outfit",sans-serif;
+    }
+    #foottxt3{
+        left: 0;
+        top: 220px;
     }
 }
