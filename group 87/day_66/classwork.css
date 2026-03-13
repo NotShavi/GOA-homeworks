@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cont{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 1440px;
+    height: 100%;
+}
+#blackbox{
+    width: 450px;
+    height: 800px;
+    background-color: black;
+}
+#image{
+    width: 540px;
+    height: 800px;
+    background-image: url(e7fadff529227217669dcfa2efebe2f5cc828075.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#txt1{
+    position: absolute;
+    top: 189px;
+    left: 165px;
+    font-size: 96px;
+    color: white;
+    line-height: 88px;
+    font-weight: 900;
+    font-family: "Big Shoulders", sans-serif;
+}
+#sp1{
+    color: black;
+}
+#txt2{
+    width: 350px;
+    height: 160px;
+    position: absolute;
+    top: 190px;
+    left: 925px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+}
+#bt{
+    display: flex;
+    flex-direction: row;
+    border: 0;
+    height: 72px;
+    width: 260px;
+    position: absolute;
+    top: 414px;
+    left: 925px;
+    border: 0;
+}
+#insidebttext{
+    height: 72px;
+    width: 204px;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+#insidebt{
+    height: 72px;
+    width: 56px;
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#second{
+    width: 1110px;
+    height: 1150px;
+    position: absolute;
+    top: 980px;
+    left: 165px;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 400px 720px;
+}
+#txtimg{
+    position: relative;
+    display: grid;
+    grid-template-columns: 475px 635px;
+}
+#day{
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 350px;
+    height: 120px;
+}
+#daytxt{
+    position: absolute;
+    font-family: "Outfit",sans-serif;
+    width: 350px;
+    height: 128px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    font-style: light;
+    top: 152px;
+}
+#image2{
+    background-image: url(e0d235b0e45cbd4f8e9a7d39fa87502976f49b46.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#imgs{
+    display: grid;
+    grid-template-columns: 635px 445px;
+    gap: 30px;
+}
+#singleimg{
+    background-image: url(sit.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#doubleimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#topofdouble{
+    width: 445px;
+    height: 313px;
+    background-image: url(08c5d6fd985013d29f5994c424ca2dcf67f0b6ae.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#lowofdouble{
+    width: 445px;
+    height: 377px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#insidedouble{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 248px;
+}
+#come{
+    width: 350px;
+    height: 120px;
+    font-family: "Big Shoulders",sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+}
+#txtcome{
+    width: 350px;
+    height: 96px;
+    font-family: "Outfit",sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 22px;
+    line-height: 32px;
+}
+#footer{
+    width: 1440px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 2310px;
+    align-items: center;
+    justify-content: center;
+}
+#foottxt{
+    height: 84px;
+    width: 1110px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+#foottxt1{
+    width: 159.57px;
+    height: 58px;
+    color: white;
+}
+.footh{
+    font-size: 32px;
+    font-family: "Big Shoulders",sans-serif;
+}
+#foottxt2{
+    width: 430px;
+    height: 84px;
+    position: absolute;
+    left: 300px;
+}
+#modern{
+    width: 430px;
+    height: 84px;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Outfit",sans-serif;
+}
+#foottxt3{
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    left: 1010px;
+}
+i{
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+i:hover{
+    color: #D5966C;
+}
+#insidebttext:hover{
+    background-color: #D5966C;
+}
+#insidebt:hover{
+    background-image: url(Screenshot\ 2026-03-13\ 044154.png);
+}
+
+
+@media (max-width:769px){
+    #blackbox{
+        width: 0;
+        height: 0;
+    }
+    #image{
+        height: 700px;
+        width: 437px;
+    }
+    #txt1{
+        color: #151515;
+        height: 130px;
+        width: 339px;
+        font-size: 70px;
+        line-height: 65px;
+        left: 400px;
+        top: 140px;
+    }
+    #txt2{
+        height: 112px;
+        width: 339px;
+        font-size: 18px;
+        line-height: 28px;
+        top: 318px;
+        left: 400px;
+    }
+    #bt{
+        width: 260px;
+        height: 72px;
+        left: 400px;
+        top: 480px;
+    }
+    #insidebttext{
+        height: 72px;
+        width: 204px;
+    }
+    #insidebt{
+        width: 56px;
+        height: 72px;
+    }
+    #second{
+        width: 689px;
+        height: 1131px;
+        left: 39px;
+        top: 820px;
+        grid-template-rows: 400px 720px;
+    }
+    #txtimg{
+        grid-template-columns: 223px 398px;
+        gap: 68px;
+    }
+    #txt3{
+        width: 223px;
+        height: 299px;
+    }
+    #day{
+        width: 223px;
+        height: 135px;
+        font-size: 50px;
+        line-height: 45px;
+    }
+    #daytxt{
+        width: 223px;
+        height: 140px;
+        font-size: 18px;
+        line-height: 28px;
+        top: 159px;
+    }
+    #imgs{
+        grid-template-columns: 398px 280px;
+        gap: 11px;
+    }
+    #topofdouble{
+        width: 280px;
+        height: 313px;
+    }
+    #lowofdouble{
+        width: 280px;
+        height: 396px;
+        justify-content: center;
+    }
+    #insidedouble{
+        height: 226px;
+        width: 223px;
+    }
+    #come{
+        width: 223px;
+        height: 90px;
+        font-size: 50px;
+        line-height: 45px;
+    }
+    #txtcome{
+        height: 112px;
+        width: 223px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #footer{
+        height: 216px;
+        width: 768px;
+    }
+    #foottxt{
+        height: 104px;
+        width: 689px;
+    }
+    #foottxt1{
+        height: 40px;
+        width: 110.05px;
+    }
+    .footh{
+        font-size: 18px;
+    }
+    #foottxt2{
+        height: 104px;
+        width: 281px;
+        font-size: 16px;
+        line-height: 26px;
+        left: 135px;
+    }
+    #foottxt3{
+        left: 600px;
+    }
+}
