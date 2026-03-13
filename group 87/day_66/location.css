@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cont{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#locationimg{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-image: url(Maps\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bt{
+    display: flex;
+    flex-direction: row-reverse;
+    border: 0;
+    height: 72px;
+    width: 260px;
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    border: 0;
+}
+#insidebttext{
+    height: 72px;
+    width: 204px;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+#insidebt{
+    height: 72px;
+    width: 56px;
+    background-image: url(Screenshot\ 2026-03-14\ 013627.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#insidebttext:hover{
+    background-color: #D5966C;
+}
+#insidebt:hover{
+    background-image: url(Screenshot\ 2026-03-14\ 013735.png);
+}
+#blackdiv{
+    width: 100%;
+    background-color: #151515;
+    height: 548px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#insideblack{
+    width: 1110px;
+    height: 316px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#ourlocation{
+    width: 350px;
+    height: 140px;
+    font-size: 70px;
+    line-height: 70px;
+    font-family: "Big Shoulders",sans-serif;
+    font-weight: 900;
+    color: white;
+
+}
+#twotxt{
+    width: 445px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 570px;
+}
+#street{
+    width: 350px;
+    height: 36px;
+    font-family: "Big Shoulders",sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    color: rgba(213, 150, 108, 1);
+    position: relative;
+}
+#streetp{
+    width: 445px;
+    height: 96px;
+    position: absolute;
+    top: 60px;
+}
+.streetp{
+    font-family: "Outfit",sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+}
+#txt{
+    width: 540px;
+    height: 128px;
+    top: 188px;
+    left: 570px;
+    font-family: "Outfit",sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    position: absolute;
+    line-height: 32px;
+    color: white;
+}
+#footer{
+    width: 100%;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    background-color: #D5966C;
+    position: absolute;
+    top: 1148px;
+    align-items: center;
+    justify-content: center;
+}
+#foottxt{
+    height: 84px;
+    width: 1110px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+#foottxt1{
+    width: 159.57px;
+    height: 58px;
+    color: rgba(21, 21, 21, 1);
+}
+.footh{
+    font-size: 32px;
+    font-family: "Big Shoulders",sans-serif;
+}
+#foottxt2{
+    width: 430px;
+    height: 84px;
+    position: absolute;
+    left: 300px;
+}
+#modern{
+    width: 430px;
+    height: 84px;
+    color: rgba(21, 21, 21, 1);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Outfit",sans-serif;
+}
+#foottxt3{
+    height: 20px;
+    width: 100px;
+    position: absolute;
+    left: 1010px;
+}
+i{
+    font-size: 20px;
+    color: black;
+    margin: 5px;
+}
+i:hover{
+    color: white;
+}
+
+@media (max-width:769px){
+    #bt{
+        left: 39px;
+    }
+    #blackdiv{
+        width: 100%;
+        background-color: #151515;
+        height: 436px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #insideblack{
+        width: 689px;
+        height: 268px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    #ourlocation{
+        width: 223px;
+        height: 100px;
+        font-size: 55px;
+        line-height: 50px;
+        font-family: "Big Shoulders",sans-serif;
+        font-weight: 900;
+        color: white;
+
+    }
+    #twotxt{
+        width: 398px;
+        height: 156px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 291px;
+    }
+    #street{
+        width: 350px;
+        height: 32px;
+        font-family: "Big Shoulders",sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 32px;
+        color: rgba(213, 150, 108, 1);
+        position: relative;
+    }
+    #streetp{
+        width: 398px;
+        height: 84px;
+        position: absolute;
+        top: 54px;
+    }
+    .streetp{
+        font-family: "Outfit",sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: white;
+    }
+    #txt{
+        width: 398px;
+        height: 112px;
+        top: 156px;
+        left: 291px;
+        font-family: "Outfit",sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        position: absolute;
+        line-height: 28px;
+        color: white;
+    }
+    #footer{
+        height: 216px;
+        width: 100%;
+        top: 1036px;
+    }
+    #foottxt{
+        height: 104px;
+        width: 689px;
+    }
+    #foottxt1{
+        height: 40px;
+        width: 110.05px;
+    }
+    .footh{
+        font-size: 18px;
+    }
+    #foottxt2{
+        height: 104px;
+        width: 281px;
+        font-size: 16px;
+        line-height: 26px;
+        left: 135px;
+    }
+    #foottxt3{
+        left: 600px;
+    }
+}
+
+@media (max-width:376px){
+    #bt{
+        left: 0px;
+    }
+     #blackdiv{
+        width: 100%;
+        background-color: #151515;
+        height: 493px;
+        display: flex;
+        flex-direction: column;
+    }
+    #insideblack{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    #ourlocation{
+        width: 343px;
+        height: 45px;
+        font-size: 50px;
+        line-height: 45px;
+        position: absolute;
+        top: 48px;
+        left: 16px;
+        font-family: "Big Shoulders",sans-serif;
+        font-weight: 900;
+        color: white;
+
+    }
+    #twotxt{
+        width: 343px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 141px;
+        left: 16px;
+    }
+    #street{
+        width: 343px;
+        height: 32px;
+        font-family: "Big Shoulders",sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 32px;
+        color: rgba(213, 150, 108, 1);
+        position: relative;
+    }
+    #streetp{
+        width: 343px;
+        height: 84px;
+        position: absolute;
+        top: 52px;
+    }
+    .streetp{
+        font-family: "Outfit",sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: white;
+    }
+    #txt{
+        width: 343px;
+        height: 140px;
+        top: 300px;
+        left: 16px;
+        font-family: "Outfit",sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        position: absolute;
+        line-height: 28px;
+        color: white;
+    }
+    #footer{
+        height: 336px;
+        width: 375px;
+        top: 1092px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #foottxt{
+        height: 240px;
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+    }
+    #foottxt1{
+        height: 40px;
+        width: 110.05px;
+    }
+    .footh{
+        font-size: 18px;
+    }
+    #foottxt2{
+        height: 104px;
+        width: 311px;
+        font-size: 16px;
+        line-height: 26px;
+        top: 78px;
+        left: 0;
+    }
+    #modern{
+        width: 311px;
+        height: 104px;
+        color: white;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        font-family: "Outfit",sans-serif;
+    }
+    #foottxt3{
+        left: 0;
+        top: 220px;
+    }
+}

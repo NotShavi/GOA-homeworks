@@ -1,5 +1,5 @@
 import random
-question = input("Do you want to play(yes/no): ")
+question = input("Do you want to play(yes/no): ").lower()
 if question.startswith("y"):
     humanscore=0
     robotscore=0
@@ -31,7 +31,7 @@ if question.startswith("y"):
             print(f"Human: {humanscore}")
             print(" ")
             print(" ")
-if humanscore>robotscore:
-    print("Congrats,you won")
-else:
-    print("You lost")
+    if humanscore>robotscore:
+        print("Congrats,you won")
+    else:
+        print("You lost")
