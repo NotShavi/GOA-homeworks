@@ -1,0 +1,800 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#skilled{
+    color: rgba(19, 24, 63, 1);
+    position: absolute;
+    top: 38.75px;
+    left: 165.79px;
+    font-size: 33px;
+}
+
+#started{
+    position: absolute;
+    top: 24px;
+    left: 1108px;
+    width: 167px;
+    height: 56px;
+    border: 0;
+}
+
+#startedb{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(19, 24, 63, 1);
+    border-radius: 28px;
+    font-size: 18px;
+    transition: 0.25s;
+    z-index: 2;
+}
+
+#startedb:hover{
+    background-color: rgba(102, 108, 163, 1);
+}
+
+button{
+    transition: 0.25s;
+}
+
+button:hover{
+    background-color: white;
+    opacity: 0.5;
+}
+
+#image{
+    width: 891.63px;
+    height: 836.92px;
+    position: absolute;
+    top: 0px;
+    left: 658px;
+    background-image: url(Group\ 19\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#text1{
+    position: absolute;
+    width: 457px;
+    height: 359px;
+    top: 252px;
+    left: 165px;
+    display: flex;
+    flex-direction: column;
+}
+
+#minimize{
+    width: 457px;
+    height: 143px;
+    font-size: 56px;
+    font-weight: 800;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#text1p1{
+    width: 445px;
+    height: 84px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgba(131, 134, 154, 1);
+    position: absolute;
+    top: 172px;
+}
+
+#startedpink{
+    width: 167px;
+    height: 63px;
+    position: absolute;
+    top: 296px;
+    border-radius: 31.5px;
+    color: white;
+    font-size: 18px;
+    background-image: linear-gradient(rgba(255, 111, 72, 1),rgba(240, 42, 166, 1));
+    border: 0;
+}
+
+#contmain{
+    width: 100%;
+    height: 888px;
+    position: absolute;
+    top: 837px;
+    background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(240, 241, 255, 1));
+}
+
+#main{
+    position: absolute;
+    width: 1110px;
+    height: 748px;
+    top: 837px;
+    left: 165px;
+}
+
+#box1{
+    width: 350px;
+    height: 322px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(255, 111, 72, 1),rgba(240, 42, 166, 1));
+}
+
+#box1p{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    top: 64px;
+    left: 32px;
+    position: absolute;
+    color: white;
+    width: 286px;
+    height: 120px;
+}
+
+#box2{
+    width: 350px;
+    height: 322px;
+    position: absolute;
+    top: 0px;
+    left: 375px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    padding-top: 50px;
+    gap: 30px;
+}
+
+.boximg{
+    position: absolute;
+    left: 30px;
+    top: -28px;
+}
+
+.animation{
+    width: 121px;
+    height: 30px;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 800;
+}
+
+.learn{
+    width: 286px;
+    height: 112px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(131, 134, 154, 1);
+}
+
+.get{
+    color: rgba(247, 71, 128, 1);
+    width: 104px;
+    height: 28px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    transition: 0.25s;
+}
+
+.get:hover{
+    color: rgba(255, 167, 195, 1);
+}
+
+#box3{
+    width: 350px;
+    height: 322px;
+    position: absolute;
+    top: 0px;
+    left: 750px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 32px;
+    padding-top: 50px;
+}
+
+#box4{
+    width: 350px;
+    height: 322px;
+    position: absolute;
+    top: 420px;
+    left: 0px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 32px;
+    padding-top: 50px;
+}
+
+#box5{
+    width: 350px;
+    height: 322px;
+    position: absolute;
+    top: 420px;
+    left: 375px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 32px;
+    padding-top: 50px;
+}
+
+#box6{
+    width: 350px;
+    height: 322px;
+    position: absolute;
+    top: 420px;
+    left: 750px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 32px;
+    padding-top: 50px;
+}
+
+footer{
+    width: 102%;
+    height: 120px;
+    position: absolute;
+    top: 1725px;
+    left: -2px;
+    background-color: rgba(19, 24, 63, 1);
+}
+
+#footerskilled{
+    color: white;
+    width: 111.17px;
+    height: 27.68px;
+    position: absolute;
+    top: 40px;
+    left: 165.79px;
+}
+
+#footerb{
+    width: 167px;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    border: 0;
+    position: absolute;
+    top: 30px;
+    left: 1108px;
+    height: 56px;
+    border-radius: 28px;
+    background-image: linear-gradient(rgba(72, 81, 255, 1),rgba(240, 42, 166, 1));
+    transition: 0.25s;
+}
+
+#footerb:hover{
+    background-color: white;
+    opacity: 0.5;
+}
+
+@media (max-width:769px){
+    #skilled{
+        color: rgba(19, 24, 63, 1);
+        position: absolute;
+        top: 24px;
+        left: 39px;
+        font-size: 28px;
+}
+    #started{
+        position: absolute;
+        top: 24px;
+        left: 549px;
+        width: 140px;
+        height: 45px;
+        border: 0;
+}
+    #text1{
+        position: absolute;
+        width: 398px;
+        height: 284px;
+        top: 171px;
+        left: 39px;
+        display: flex;
+        flex-direction: column;
+}
+
+    #minimize{
+        width: 326px;
+        height: 101px;
+        font-size: 40px;
+        font-weight: 800;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+    #text1p1{
+        width: 398px;
+        height: 78px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: rgba(131, 134, 154, 1);
+        position: absolute;
+        top: 126px;
+}
+
+    #startedpink{
+        width: 167px;
+        height: 56px;
+        position: absolute;
+        top: 228px;
+        border-radius: 31.5px;
+        color: white;
+        font-size: 18px;
+        background-image: linear-gradient(rgba(255, 111, 72, 1),rgba(240, 42, 166, 1));
+        border: 0;
+}
+    #image{
+        width: 640.71px;
+        height: 640px;
+        position: absolute;
+        top: 0px;
+        left: 245px;
+        background-image: url(Group\ 12.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+    #contmain{
+        width: 100%;
+        height: 999px;
+        position: absolute;
+        top: 641px;
+        background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(240, 241, 255, 1));
+}
+    #main{
+        position: absolute;
+        width: 689px;
+        height: 913px;
+        top: 641px;
+        left: 39px;
+}
+    #box1{
+        width: 339px;
+        height: 259px;
+        
+    }
+    #box1p{
+        font-size: 24px;
+        line-height: 32px;
+        width: 286px;
+        height: 64px;
+        top: 56px;
+        left: 32px;
+    }
+    #box2{
+        width: 339px;
+        height: 259px;
+        gap: 20px;
+    }
+    #box3{
+        width: 339px;
+        height: 259px;
+        gap: 20px;
+    }
+    #box4{
+        width: 339px;
+        height: 259px;
+        gap: 20px;
+    }
+    #box5{
+        width: 339px;
+        height: 259px;
+        gap: 20px;
+    }
+    #box6{
+        width: 339px;
+        height: 259px;
+        gap: 20px;
+    }
+    .animation{
+        width: 101px;
+        height: 25px;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 800;
+}
+
+    .learn{
+        width: 286px;
+        height: 78px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgba(131, 134, 154, 1);
+}
+
+    .get{
+        color: rgba(247, 71, 128, 1);
+        width: 104px;
+        height: 28px;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        transition: 0.25s;
+}
+    #box1{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 15px;
+        background-image: linear-gradient(rgba(255, 111, 72, 1),rgba(240, 42, 166, 1));
+}
+    #box2{
+        position: absolute;
+        top: 0px;
+        left: 359px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+
+}
+    #box3{
+        position: absolute;
+        top: 320px;
+        left: 0px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+
+    #box4{
+        position: absolute;
+        top: 320px;
+        left: 359px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+
+    #box5{
+        position: absolute;
+        top: 640px;
+        left: 0px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+
+    #box6{
+        position: absolute;
+        top: 640px;
+        left: 359px;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+    footer{
+        width: 102%;
+        height: 120px;
+        position: absolute;
+        top: 1640px;
+        left: -2px;
+        background-color: rgba(19, 24, 63, 1);
+}
+
+    #footerskilled{
+        color: white;
+        width: 89px;
+        height: 28px;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+}
+
+    #footerb{
+        width: 140px;
+        height: 48px;
+        color: white;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 700;
+        border: 0;
+        position: absolute;
+        top: 30px;
+        left: 578px;
+        border-radius: 28px;
+        background-image: linear-gradient(rgba(72, 81, 255, 1),rgba(240, 42, 166, 1));
+        transition: 0.25s;
+}
+}
+
+@media (max-width:376px){
+    #skilled{
+        color: rgba(19, 24, 63, 1);
+        position: absolute;
+        top: 20px;
+        left: 16px;
+        font-size: 28px;
+}
+    #started{
+        position: absolute;
+        top: 16px;
+        left: 208px;
+        width: 140px;
+        height: 48px;
+        border: 0;
+}
+    #text1{
+        position: absolute;
+        width: 343px;
+        top: 102px;
+        left: 16px;
+        display: flex;
+        flex-direction: column;
+}
+
+    #minimize{
+        width: 343px;
+        height: 101px;
+        font-size: 40px;
+        font-weight: 800;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+    #text1p1{
+        width: 343px;
+        height: 78px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: rgba(131, 134, 154, 1);
+        position: absolute;
+        top: 126px;
+}
+
+    #startedpink{
+        width: 167px;
+        height: 56px;
+        position: absolute;
+        top: 228px;
+        border-radius: 31.5px;
+        color: white;
+        font-size: 18px;
+        background-image: linear-gradient(rgba(255, 111, 72, 1),rgba(240, 42, 166, 1));
+        border: 0;
+}
+    #image{
+        width: 327px;
+        height: 301px;
+        position: absolute;
+        top: 433px;
+        left: 24px;
+        background-image: url(Group\ 9.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}
+    #contmain{
+        width: 100%;
+        height: 1955px;
+        position: absolute;
+        top: 800px;
+        background-image: linear-gradient(rgba(255, 255, 255, 1),rgba(240, 241, 255, 1));
+}
+    #main{
+        position: absolute;
+        width: 343px;
+        height: 1615px;
+        top: 800px;
+        left: 16px;
+}
+    #box1{
+        width: 343px;
+        height: 120px;
+        
+    }
+    #box1p{
+        font-size: 24px;
+        line-height: 32px;
+        width: 286px;
+        height: 64px;
+        top: 24px;
+        left: 28px;
+    }
+    #box2{
+        width: 343px;
+        height: 283px;
+        gap: 20px;
+    }
+    #box3{
+        width: 343px;
+        height: 283px;
+        gap: 20px;
+    }
+    #box4{
+        width: 343px;
+        height: 283px;
+        gap: 20px;
+    }
+    #box5{
+        width: 343px;
+        height: 283px;
+        gap: 20px;
+    }
+    #box6{
+        width: 343px;
+        height: 283px;
+        gap: 20px;
+    }
+    .animation{
+        width: 101px;
+        height: 25px;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 800;
+}
+
+    .learn{
+        width: 286px;
+        height: 78px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: rgba(131, 134, 154, 1);
+}
+
+    .get{
+        color: rgba(247, 71, 128, 1);
+        width: 104px;
+        height: 28px;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        transition: 0.25s;
+}
+    #box1{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 10px;
+        background-image: linear-gradient(rgba(255, 111, 72, 1),rgba(240, 42, 166, 1));
+}
+    #box2{
+        position: absolute;
+        top: 170px;
+        left: 0px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+
+}
+    #box3{
+        position: absolute;
+        top: 523px;
+        left: 0px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+
+    #box4{
+        position: absolute;
+        top: 876px;
+        left: 0px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+
+    #box5{
+        position: absolute;
+        top: 1229px;
+        left: 0px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+
+    #box6{
+        position: absolute;
+        top: 1582px;
+        left: 0px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        padding-top: 50px;
+}
+    footer{
+        width: 102%;
+        height: 120px;
+        position: absolute;
+        top: 2755px;
+        left: -2px;
+        background-color: rgba(19, 24, 63, 1);
+}
+
+    #footerskilled{
+        color: white;
+        width: 89px;
+        height: 28px;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+}
+
+    #footerb{
+        width: 140px;
+        height: 48px;
+        color: white;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 700;
+        border: 0;
+        position: absolute;
+        top: 30px;
+        left: 220px;
+        border-radius: 28px;
+        background-image: linear-gradient(rgba(72, 81, 255, 1),rgba(240, 42, 166, 1));
+        transition: 0.25s;
+}
+}
