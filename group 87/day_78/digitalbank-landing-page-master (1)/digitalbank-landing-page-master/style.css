@@ -1,0 +1,678 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#head{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+    padding: 20px 145px;
+    align-items: center;
+    gap: 35px;
+}
+
+#headimg{
+    width: 150px;
+    height: 60px;
+    margin-right: 200px;
+}
+
+.headtxt{
+    font-weight: 300;
+}
+
+#headb{
+    position: absolute;
+    right: 145px;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+#headb:hover{
+    opacity: 0.5;
+}
+
+#mainimg{
+    width: 900px;
+    height: 950px;
+    z-index: 1;
+    position: absolute;
+    right: -160px;
+    top: -70px;
+}
+
+#behindmainimg{
+    position: absolute;
+    top: -180px;
+    right: -350px;
+    z-index: 0;
+    height: 1050px;
+    width: 1200px;
+}
+
+#text1{
+    width: 500px;
+    margin-top: 170px;
+    margin-left: 150px;
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#text1h1{
+    font-size: 63px;
+    line-height: 70px;
+    font-weight: 500;
+}
+
+#text1p{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+#text1b{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+#text1b:hover{
+    opacity: 0.5;
+}
+
+#text2{
+    width: 100%;
+    height: 800px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: hsl(213, 24%, 93%);
+    display: flex;
+    flex-direction: column;
+}
+
+#text2text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 780px;
+    margin-bottom: 50px;
+}
+
+#choose{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+#undchoose{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+#text2cards{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.cardlogo{
+    width: 100px;
+    height: 100px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+}
+
+.undlogo{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.logop{
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+#text3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    gap: 50px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+#latest{
+    font-size: 54px;
+    font-weight: 400;
+}
+
+#articles{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+
+.articles{
+    height: 450px;
+    width: 430px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.articleimg{
+    width: 100%;
+    height: 52%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.articlediv{
+    width: 100%;
+    height: 48%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.article{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.undarticle{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.articlep{
+    font-size: 14.5px;
+    font-weight: 300;
+}
+
+#foot{
+    width: 100%;
+    height: 170px;
+    background-color: hsl(233, 26%, 24%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#footmain{
+    width: 85%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footimg{
+    height: 23px;
+}
+
+#foot1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#foot2{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-right: 250px;
+}
+
+#foot2one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#foot2two{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#foot3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footb{
+    margin-left: 110px;
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+#footb:hover{
+    opacity: 0.5;
+}
+
+#last{
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    margin-left: 50px;
+}
+
+@media (max-width:376px){
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 98%);
+    align-items: center;
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#head{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+    padding: 20px 0px;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 350px;
+}
+
+#headimg{
+    width: 250px;
+    height: 100px;
+    margin:0;
+}
+
+.headtxt{
+    font-weight: 300;
+    font-size: 0;
+}
+
+#headb{
+    width: 0px;
+    height: 0px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+#headb:hover{
+    opacity: 0.5;
+}
+
+#mainimg{
+    width: 100%;
+    height: 480px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+#behindmainimg{
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    z-index: 0;
+    height: 480px;
+    width: 100%;
+}
+
+#text1{
+    width: 340px;
+    margin: 0;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#text1h1{
+    font-size: 42px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 500;
+}
+
+#text1p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+#text1b{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+#text1b:hover{
+    opacity: 0.5;
+}
+
+#text2{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: hsl(213, 24%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text2text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+#choose{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#undchoose{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+#text2cards{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cardlogo{
+    width: 100px;
+    height: 100px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+}
+
+.undlogo{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.logop{
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 300;
+}
+
+#text3{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 800px;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+    background-color: hsl(0, 0%, 98%);
+    align-items: center;
+}
+
+#latest{
+    font-size: 54px;
+    font-weight: 400;
+}
+
+#articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.articles{
+    height: 500px;
+    width: 340px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.articleimg{
+    width: 100%;
+    height: 52%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.articlediv{
+    width: 100%;
+    height: 48%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.article{
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.undarticle{
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.articlep{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#foot{
+    width: 100%;
+    height: 1070px;
+    background-color: hsl(233, 26%, 24%);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footmain{
+    width: 70%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footimg{
+    height: 23px;
+}
+
+#foot1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#foot2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 0px;
+}
+
+#foot2one{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    gap: 15px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#foot2two{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-weight: 400;
+    gap: 15px;
+    font-size: 18px;
+}
+
+#foot3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footb{
+    align-items: center;
+    margin-left: 25px;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to bottom, hsl(136, 64%, 51%), hsl(192, 69%, 51%));
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+#footb:hover{
+    opacity: 0.5;
+}
+
+#last{
+    color: hsl(233, 8%, 62%);
+    font-weight: 300;
+    margin-left: 0px;
+    padding-bottom: 20px;
+}
+    #text2,
+    #text3,
+    #foot {
+        height: auto;
+    }
+}
