@@ -1,0 +1,546 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla",sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(169, 32%, 77%);
+}
+
+
+
+#main{
+    background-color: white;
+    width: 45%;
+    border-radius: 15px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#fullname{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#nameinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#lastnameinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#name{
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#name:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#contact{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#lastname{
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#lastname:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#emailinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#email{
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#email:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#query-type{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.radio-card{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 18px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+
+.radio-card input{
+  display: none;
+}
+
+
+.custom-radio{
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.custom-radio::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: hsl(169, 82%, 27%);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s;
+}
+
+.radio-card input:checked + .custom-radio::after{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-card:has(input:checked){
+  border: 2px solid hsl(169, 82%, 27%);
+  background: hsl(148, 38%, 91%);
+}
+
+
+.radio-card:hover{
+  border-color: hsl(169, 82%, 27%);
+}
+
+#messageinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#message{
+    font-size: 22px;
+    padding: 5px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#message:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#consent {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+
+#check {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+
+#check:checked {
+  background-color: #2ecc71;
+  background-image: url(assets/images/icon-checkbox-check.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#submit{
+    border: 0;
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    font-weight: 300;
+    border-radius: 7px;
+    color: white;
+    background-color: hsl(169, 82%, 27%);
+    transition: 0.25s;
+}
+
+#submit:hover{
+    transform: scale(1.03);
+}
+
+#pop {
+  position: fixed;
+  top: 10px;
+  left: 35%;
+  background: hsl(187, 24%, 22%);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+#popdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#popbutton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    transition: 0.25s;
+    z-index: 10;
+}
+
+#popbutton:hover{
+    transform: scale(1.2);
+}
+
+#popimg,
+#poph3 {
+  display: inline-block;
+}
+
+@media (max-width:376px){
+    body{
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(186, 15%, 59%);
+}
+
+
+
+#main{
+    background-color: white;
+    width: 93%;
+    border-radius: 15px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#fullname{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+#nameinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#lastnameinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#name{
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#name:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#contact{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#lastname{
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#lastname:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#emailinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#email{
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#email:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#query-type{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-group{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.radio-card{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  width: 100%;
+  padding: 18px 20px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 18px;
+}
+
+
+.radio-card input{
+  display: none;
+}
+
+
+.custom-radio{
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.custom-radio::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: hsl(169, 82%, 27%);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s;
+}
+
+.radio-card input:checked + .custom-radio::after{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-card:has(input:checked){
+  border: 2px solid hsl(169, 82%, 27%);
+  background: hsl(148, 38%, 91%);
+}
+
+
+.radio-card:hover{
+  border-color: hsl(169, 82%, 27%);
+}
+
+#messageinp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#message{
+    font-size: 22px;
+    padding: 5px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#message:focus{
+    border:1px solid hsl(169, 82%, 27%);
+    outline: none;
+}
+
+#consent {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+
+#check {
+  appearance: none;
+  width: 20px;
+  height: 17px;
+  border-radius: 2px;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+
+
+#check:checked {
+  background-color: #2ecc71;
+  background-image: url(assets/images/icon-checkbox-check.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#submit{
+    border: 0;
+    font-size: 22px;
+    padding: 5px;
+    height: 50px;
+    font-weight: 300;
+    border-radius: 7px;
+    color: white;
+    background-color: hsl(169, 82%, 27%);
+}
+#pop {
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  background: hsl(187, 24%, 22%);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+#popdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+}
+
+#popbutton{
+    position: absolute;
+    right: -10px;
+    top: -5px;
+}
+
+
+
+}
