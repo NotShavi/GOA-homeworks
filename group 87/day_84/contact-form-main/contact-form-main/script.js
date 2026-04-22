@@ -19,7 +19,30 @@ function submit(e){
     if (users.some((value)=>{
         return info.email === value.email
     })){
-        alert("Same email was found in the system,try new one")
+        let div = document.createElement("div")
+        div.id = "pop"
+        body.appendChild(div)
+        let div2 = document.createElement("div")
+        div2.id = "popdiv"
+        div.appendChild(div2)
+        let h3 = document.createElement("h3")
+        h3.id = "poph3"
+        h3.innerHTML = "Failed"
+        div2.appendChild(h3)
+        let text = document.createElement("p")
+        text.id = "poptext"
+        text.innerHTML = "Same email was found in the system,try another one"
+        div.appendChild(text)
+        let button = document.createElement("button")
+        button.innerHTML = "X"
+        button.id = "popbutton"
+        button.style.background="transparent"
+        button.style.border = 0
+        button.style.fontSize = "18px"
+        div2.append(button)
+        button.addEventListener("click",() => {
+        div.remove()
+        })
         e.target.reset()
         return;
     }
