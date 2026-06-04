@@ -1,0 +1,13 @@
+#products, #innerCart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+}
+
+#products div, #innerCart div{
+    width: 250px;
+}
+
+img{
+    width: 250px;
+}

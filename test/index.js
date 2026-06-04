@@ -1,19 +1,21 @@
-let name = "Andria"
+// let name = "Andria"
 
-function greet(){
-    let name = "Nika"
-    return name
-}
+// function greet(){
+//     let name = "Nika"
+//     return name
+// }
 
-console.log(name)
-console.log(greet())
+// console.log(name)
+// console.log(greet())
 
-name = "nika"
+// name = "nika"
 
-let info={
-    name : "Andria",
-    lastName : "Shavidze",
-    city : "Tbilisi"
-}
-let num = 1
+// let info={
+//     name : "Andria",
+//     lastName : "Shavidze",
+//     city : "Tbilisi"
+// }
+// let num = 1
+
+console.log(Number("09"))
 

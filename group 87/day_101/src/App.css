@@ -1,0 +1,49 @@
+#items{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 90%;
+  align-items: center;
+}
+
+.image{
+  width: 150px;
+  height: 200px;
+}
+
+.title{
+  font-size: 14px;
+  width: 200px;
+}
+
+.button{
+  width: 150px;
+}
+
+#cart{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#pay{
+  width: 150px;
+}
+
+#cartitems{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+
+#line{
+  width: 100px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+            <form action="">
+                <label for="text">Search Model/Brand</label>
+                <input type="text" name="text" id="text" placeholder="Search car's model or brand">
+                <button id="submit">Submit</button>
+            </form>
+            <b id="sort">Sort:</b>
+            <select name="filter" id="filter">
+                <option value="All" selected>All</option>
+                <option value="Ford">Ford</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="pricedown">ფასით (მაღლიდან > დაბლისკენ)</option>
+                <option value="priceup">ფასით (დაბლიდან > მაღალისკენ)</option>
+            </select>
+        </div>
+        <div id="right">
+            <h1>Cars</h1>
+            <div id="cars">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>

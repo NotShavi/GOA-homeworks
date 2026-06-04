@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* div{
+    border: 1px solid red;
+} */
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 86%);
+}
+
+#main{
+    width: 50%;
+    height: 85%;
+    border-radius: 3% 3% 30% 3%;
+    padding: 50px;
+    background-color: white;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#formdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.inps{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label{
+    color: hsl(0, 1%, 44%);
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.inp{
+    width: 160px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1.5px solid gray;
+    padding: 10px;
+    font-size: 22px;
+    outline: 0;
+    cursor: grab;
+    font-weight: 900;
+}
+
+.inp:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+#line{
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+
+#img{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    background-image: url(assets/images/icon-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85px;
+    width: 85px;
+    position: absolute;
+    right: -3px;
+    top: -42.5px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#img:hover{
+    background-color: black;
+}
+
+#nums{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dates{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.num{
+    font-size: 80px;
+    color: hsl(259, 100%, 65%);
+}
+
+.name{
+    font-size: 70px;
+}

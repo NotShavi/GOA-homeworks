@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* div{
+  border: 1px solid red;
+} */
+
+#main{
+  width: 460px;
+  height: 670px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+h1{
+  color: white;
+  margin-bottom: 10px;
+}
+
+#p1{
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 25px;
+}
+
+#p2{
+  color: white;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.buttons{
+  width: 100%;
+  height: 50px;
+  background-color: hsl(0, 0%, 20%);
+  border: 0;
+  color: white;
+  transition: 0.25s;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buttons:hover{
+  color: black;
+  background-color: hsl(75, 94%, 57%);
+}
+
+#buttons{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+@media (max-width:376px){
+  #main{
+    width: 90%;
+    height: 80%;
+    padding: 20px;
+  }
+
+
+
+img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h1{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+#p1{
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+#p2{
+  color: white;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.buttons{
+  width: 100%;
+  height: 40px;
+  background-color: hsl(0, 0%, 20%);
+  border: 0;
+  color: white;
+  transition: 0.25s;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buttons:hover{
+  color: black;
+  background-color: hsl(75, 94%, 57%);
+}
+
+#buttons{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+}

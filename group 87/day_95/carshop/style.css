@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    height: 100vh;
+}
+
+#left{
+    background: #111827;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+label{
+    font-size: 20px;
+}
+
+select{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#sort{
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+#submit{
+    height: 30px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    transition: 0.25s;
+}
+
+#submit:hover{
+    scale: 1.05;
+    font-size: 15px;
+}
+
+#right{
+    padding: 20px;
+
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+#cars{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 15px;
+}
+
+.cardiv{
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.cardiv:hover{
+    transform: translateY(-5px);
+}
+
+.carimg{
+    width: 100%;
+    height: 195px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+    border: 0;
+}
+
+.bold{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info{
+    font-size: 14px;
+    font-weight: 100;
+    margin: 3px 0;
+}
+
+#notfound{
+    font-size: 40px;
+    width: 500%;
+    color: red;
+    margin-bottom: 10px;
+}
+
+@media (max-width:376px){
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: #f4f6f9;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#left{
+    background: #111827;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+label{
+    font-size: 20px;
+}
+
+select{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#sort{
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+#submit{
+    height: 30px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    transition: 0.25s;
+}
+
+#submit:hover{
+    scale: 1.05;
+    font-size: 15px;
+}
+
+#right{
+    padding: 20px;
+
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+#cars{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+    gap: 15px;
+}
+
+.cardiv{
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.cardiv:hover{
+    transform: translateY(-5px);
+}
+
+.carimg{
+    width: 100%;
+    height: 195px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+    border: 0;
+}
+
+.bold{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info{
+    font-size: 14px;
+    font-weight: 100;
+    margin: 3px 0;
+}
+
+#notfound{
+    font-size: 40px;
+    width: 100%;
+    color: red;
+    margin-bottom: 10px;
+}
+}

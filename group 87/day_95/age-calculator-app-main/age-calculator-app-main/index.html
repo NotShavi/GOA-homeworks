@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders:opsz,wght@10..72,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federant&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Playwrite+DE+SAS:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Young+Serif&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Day
+  DD
+
+  Month
+  MM
+
+  Year
+  YYYY
+
+  -- years
+  -- months
+  -- days -->
+  <div id="container">
+    <div id="main">
+      <form>
+        <div id="formdiv">
+        <div class="inps">
+          <label for="day" class="label">DAY</label>
+          <input type="text" name="day" placeholder="DD" id="day" class="inp">
+        </div>
+        <div class="inps">
+          <label for="month" class="label">MONTH</label>
+          <input type="text" name="month" placeholder="MM" id="month" class="inp">
+        </div>
+        <div class="inps">
+          <label for="year" class="label">YEAR</label>
+          <input type="text" name="year" placeholder="YYYY" id="year" class="inp">
+        </div>
+      </div>
+        <div id="line">
+          <hr>
+          <button id="img"></button>
+        </div>
+      </form>
+      
+      <div id="nums">
+        <div class="dates">
+          <h1 class="num" id="yearnum">- -</h1>
+          <h2 class="name">years</h2>
+        </div>
+        <div class="dates">
+          <h1 class="num" id="monthnum">- -</h1>
+          <h2 class="name">months</h2>
+        </div>
+        <div class="dates">
+          <h1 class="num" id="daynum">- -</h1>
+          <h2 class="name">days</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
