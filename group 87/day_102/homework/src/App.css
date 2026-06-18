@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+#root{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -87,7 +87,7 @@ form{
 #img{
     background-color: hsl(259, 100%, 65%);
     border-radius: 50%;
-    background-image: url(assets/images/icon-arrow.svg);
+    background-image: url(icon-arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
     height: 85px;

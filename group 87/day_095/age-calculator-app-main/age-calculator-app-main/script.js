@@ -9,28 +9,23 @@ const li = [0,31,29,31,30,31,30,31,31,30,31,30,31]
 const form = document.querySelector("form")
 
 
-function calculate(year,month,day){
-    
+function calculate(year, month, day) {
+    let years = cyear - year;
+    let months = cmonth - month;
+    let days = cday - day;
 
-    let calyear = cyear - year
-    let calmonth = 0
-    let calday = 0
-    if (cmonth < month){
-        calyear--
-        calmonth = 12+(cmonth-Number(month))
-    }
-    else{
-        calmonth = cmonth-Number(month)
-    }
-    if (cday<day){
-        calmonth--
-        calday = li[form.month.value]+(cday-Number(day))
-    }
-    else{
-        calday = cday-Number(day)
+    if (days < 0) {
+        months--;
+        const previousMonth = new Date(cyear, cmonth - 1, 0).getDate();
+        days += previousMonth;
     }
 
-    return [Number(calyear),Number(calmonth),Number(calday)]
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    return [years, months, days];
 }
 
 form.addEventListener("submit",(e)=>{
